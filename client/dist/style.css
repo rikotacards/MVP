@@ -1,0 +1,80 @@
+.catStyle {
+  position:sticky;
+  top:0;
+  height:'60px';
+  font-size:'35px';
+  background:#FFC107;
+  padding:20px;
+  font-size:55px
+}
+
+.itemContainer{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  font-family: Helvetica;
+  margin-bottom: 20px;
+}
+
+.itemName {
+  background:'';
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-size:25px;
+  font-weight: bold;
+  padding:20px;
+}
+
+.itemRating {
+  background:'';
+  grid-column:2/3;
+  grid-row:1/2
+}
+
+.itemPrice{
+  background:'';
+  grid-column: 3/4;
+  grid-row:1/2;
+  text-align:center;
+  font-weight: bold;
+  align-self:center;
+}
+
+.divider {
+  grid-column:1/4;
+  grid-row:2/3;
+  background:black;
+  height:2px;
+}
+
+.itemDesc {
+  background:'';
+  grid-column:1/4;
+  grid-row:3/4;
+  padding:20px;
+}
+
+.itemReviews {
+  padding-top:20px;
+  background:'';
+  grid-column:1/4;
+  grid-row:4/5;
+}
+
+.showreviews {
+  padding-top:20px;
+  color:blue;
+  padding:20px
+}
+
+.reviewContent {
+  padding-top:10px;
+  border-radius: 20px;
+  background: #F2F3F5;
+  margin:10px;
+  padding:10px;
+  font-size:15px;
+
+}
+.userName {
+  color: blue
+}
