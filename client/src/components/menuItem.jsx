@@ -7,17 +7,6 @@ const divStyle = {
   borderBottom: '1px solid black'
 };
 
-// var reviewsComponent = (props) => {
-//   if(props.reviewsState){
-//     return(
-//       <div>
-//         all the reviews
-//       </div>
-//     )
-//   }
-// }
-
-
 class MenuItem extends React.Component{
   constructor(props){
     super(props)
@@ -26,7 +15,6 @@ class MenuItem extends React.Component{
     }
     this.toggleReview = this.toggleReview.bind(this)
   }
-
 
   toggleReview(){
     this.setState({
@@ -40,20 +28,20 @@ class MenuItem extends React.Component{
       <div className = 'itemContainer' style = {divStyle}>
 
       <div className = 'itemName'>
-        {this.props.item.name}
+        {this.props.item.itemname}
       </div>
       {/* <div className = 'itemRating'>
 
       </div> */}
       <div className = 'itemPrice'>
-        ${this.props.item.price}
+        ${this.props.item.itemprice}
       </div>
       <div className = 'divider'></div>
       <div className ='itemDesc'>
-        {this.props.item.desc}
+        {this.props.item.itemdesc}
       </div>
-      <div className ='itemReviews' onClick = {this.toggleReview}>
-      <Reviews reviewsState = {this.state.showreviews}/>
+      <div className ='itemReviews' >
+      <Reviews itemId = {this.props.item.id} reviewsState = {this.state.showreviews}/>
       </div>
     </div>
     )

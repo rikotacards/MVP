@@ -1,19 +1,9 @@
 import React from 'react';
 import MenuItem from './menuItem.jsx'
 
-const catStyle = {
-  background:'lightgrey',
-  position:'-webkit-sticky',
-  position:'sticky',
-  top:'0',
-  height:'45px',
-  fontSize:'35px',
-}
-
 var MenuList = (props) =>{
 
   return(
-
 
     <div>
       <div className ='catStyle'>
@@ -21,7 +11,7 @@ var MenuList = (props) =>{
       </div>
 
       {props.menuItems.map((i,index)=>{
-          if(i.category==='main'){
+          if(i.itemcategory === 'main'){
 
           return(
           <MenuItem item = {i} key ={index}/>
@@ -34,7 +24,7 @@ var MenuList = (props) =>{
       Drinks
     </div>
     {props.menuItems.map((i,index)=>{
-      if(i.category==='drinks'){
+      if(i.itemcategory === 'drinks'){
         return(
           <MenuItem item={i} key={index}/>
         )

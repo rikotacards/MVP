@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "create-schema": "psql -U postgres < schema.sql"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,9 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
+    "pg": "^7.10.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0"

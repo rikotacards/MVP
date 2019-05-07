@@ -78,3 +78,31 @@
 .userName {
   color: blue
 }
+
+form {
+  padding:20px;
+  height: 50px;
+}
+
+.inputform {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  height: 50px;
+  width: 100%;
+  text-indent: 20px;
+  font-size: 35px;
+  background: lightgrey;
+  border-width: 1px;
+
+}
+.inputform:focus{
+  outline-width: 0;
+}
+
+.submit{
+  background:transparent;
+  width: 0px;
+  border:transparent;
+  height: 0px;
+}
