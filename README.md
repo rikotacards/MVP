@@ -19,9 +19,6 @@ Once the project moves into development, the press release can be used as a touc
 ## Menu Application ##
   > Online restaurant menu application that allows users to browse restaraunt menus, and leave reviews by the dish. 
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
 ## Summary ##
   >Presents and easy-to-read restaurant menu interface, sorted by dish category. Eg, 'mains', 'drinks'. Each menu item can receive a written review. Pending star ratings. 
 
